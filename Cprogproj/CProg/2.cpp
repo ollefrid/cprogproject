@@ -26,6 +26,19 @@ bool loadMedia();
 
 void close();
 
+
+
+/*
+what we need:
+renderer function 
+		for updating our window
+update functtion
+		for handling game loops etc
+event function
+		for handling keyevents and such
+*/
+
+
 SDL_Surface* loadSurface(std::string path);
 
 SDL_Window* gWindow = NULL;
