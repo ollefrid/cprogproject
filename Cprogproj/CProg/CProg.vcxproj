@@ -74,6 +74,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Users\Olle\Documents\cprogproject\SDL2_image\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -102,12 +103,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Olle\Documents\cprogproject\SDL2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Olle\Documents\cprogproject\SDL2\include;C:\Users\Olle\Documents\cprogproject\SDL2_image\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Olle\Documents\cprogproject\SDL2\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Olle\Documents\cprogproject\SDL2\lib\x64;C:\Users\Olle\Documents\cprogproject\SDL2_image\lib\x64;C:\Users\Olle\Documents\cprogproject\SDL2_image\lib;C:\Users\Olle\Documents\cprogproject\SDL2_image\include</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
