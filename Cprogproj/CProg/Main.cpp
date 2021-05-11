@@ -1,3 +1,5 @@
+#define SDL_MAIN_HANDLED
+
 #include "SDL.h"
 #include "Engine.h"
 
@@ -11,6 +13,8 @@ int main(int argc, char argv[]){
 		Engine::GetInstance()->Render();
 	}
 
+	Engine::GetInstance()->Clean();
+	return 0;
 
 	/*SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_Window* window = SDL_CreateWindow("title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
@@ -19,8 +23,4 @@ int main(int argc, char argv[]){
 	SDL_RenderClear(renderer);
 	SDL_RenderPresent(renderer);
 	SDL_Delay(3000);*/
-
-
-	Engine::GetInstance()->Clean();
-	return 0;
-	}
+}
