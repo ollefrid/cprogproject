@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include "TextureManager.h"
+#include "Transform.h"
 
 Engine* Engine::s_Instance = nullptr;
 
@@ -34,6 +35,8 @@ bool Engine::Clean()
 	SDL_DestroyWindow(m_Window);
 	IMG_Quit();
 	SDL_Quit();
+
+	return 0;
 }
 
 void Engine::Quit()

@@ -34,6 +34,8 @@ void TextureManager::Clean()
 		SDL_DestroyTexture(it->second);
 	}
 	m_TextureMap.clear();
+
+	SDL_Log("texture map cleaned."); 
 }
 
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip)
